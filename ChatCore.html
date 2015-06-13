@@ -71,11 +71,14 @@
               var disqus_title = "General Chatting";
               var disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=chatting";
               $("#chatting").addClass("active");
+              document.title = "General Chatting - ZeRo2PaNic/PaNiC2ZeRo Messages Board";
               break;
             case "?page=strategies":
-              var disqus_identifier = "Chatting";
-              var disqus_title = "General Chatting";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              var disqus_identifier = "Strategies";
+              var disqus_title = "Strategies and Base Design";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=strategies";
+              $("#strategies").addClass("active");
+              document.title = "Strategies and Base Design - ZeRo2PaNic/PaNiC2ZeRo Messages Board";
               break;
             case "?page=chatting":
               var disqus_identifier = "Chatting";
@@ -94,7 +97,8 @@
               break;
             default: 
               alert("System Error: Invalid Parameter");
-              window.location.href = http://x01x012013.github.io/z2pp2z/index.html;
+              window.location.href = "http://x01x012013.github.io/z2pp2z/index.html";
+              break;
           }
           var disqus_shortname = "z2pp2z";
           var loadDiscus = function() {
