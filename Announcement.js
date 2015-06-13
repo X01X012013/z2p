@@ -1,1 +1,1 @@
-$("#annoucementHolder").html("<p>JB, tell everyone who want to be moderator to make an Disqus account: </p><a style=\"font-size: 21px;\" href=\"https://disqus.com/\" target=\"_blank\">https://disqus.com/</a>");
+$("#annoucementHolder").html("<p>If you are a lord and want to be moderator, please post your request in Alliance Management. You will need an account to be moderator</p>");
