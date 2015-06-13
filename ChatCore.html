@@ -41,11 +41,11 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="Chatting.html">General Chatting</a></li>
-            <li><a href="Strategies.html">Strategies and Base Design</a></li>
-            <li><a href="Management.html">Alliance Management</a></li>
-            <li><a href="Issue.html">Report Issue</a></li>
-            <li><a href="OffTopic.html">Off-Topic</a></li>
+            <li id="chatting"><a href="Chatting.html">General Chatting</a></li>
+            <li id="strategies"><a href="Strategies.html">Strategies and Base Design</a></li>
+            <li id="management"><a href="Management.html">Alliance Management</a></li>
+            <li id="issue"><a href="Issue.html">Report Issue</a></li>
+            <li id="offtopic"><a href="OffTopic.html">Off-Topic</a></li>
           </ul>
         </div>
       </div>
@@ -65,17 +65,44 @@
         <h1>General Chatting</h1>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES * * */
+          switch(window.location.search){
+            case "?page=chatting":
+              var disqus_identifier = "Chatting";
+              var disqus_title = "General Chatting";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              $("#chatting").addClass("active");
+              break;
+            case "?page=strategies":
+              var disqus_identifier = "Chatting";
+              var disqus_title = "General Chatting";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              break;
+            case "?page=chatting":
+              var disqus_identifier = "Chatting";
+              var disqus_title = "General Chatting";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              break;
+            case "?page=chatting":
+              var disqus_identifier = "Chatting";
+              var disqus_title = "General Chatting";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              break;
+            case "?page=chatting":
+              var disqus_identifier = "Chatting";
+              var disqus_title = "General Chatting";
+              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+              break;
+            default: 
+              alert("System Error: Invalid Parameter");
+              window.location.href = http://x01x012013.github.io/z2pp2z/index.html;
+          }
           var disqus_shortname = "z2pp2z";
-          var disqus_identifier = "Chatting";
-          var disqus_title = "General Chatting";
-          var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
+          var loadDiscus = function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
+          };
+          if(disqus_identifier !== undefined){loadDiscus();}
         </script>
       </div>
     </div>
