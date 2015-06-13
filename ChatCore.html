@@ -41,11 +41,11 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li id="chatting"><a href="Chatting.html">General Chatting</a></li>
-            <li id="strategies"><a href="Strategies.html">Strategies and Base Design</a></li>
-            <li id="management"><a href="Management.html">Alliance Management</a></li>
-            <li id="issue"><a href="Issue.html">Report Issue</a></li>
-            <li id="offtopic"><a href="OffTopic.html">Off-Topic</a></li>
+            <li id="chatting"><a href="ChatCore.html?page=chatting">General Chatting</a></li>
+            <li id="strategies"><a href="ChatCore.html?page=strategies">Strategies and Base Design</a></li>
+            <li id="management"><a href="ChatCore.html?page=management">Alliance Management</a></li>
+            <li id="issue"><a href="ChatCore.html?page=issue">Report Issue</a></li>
+            <li id="offtopic"><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
           </ul>
         </div>
       </div>
@@ -62,38 +62,33 @@
     <!-- Disqus -->
     <div class="container">
       <div class="jumbotron">
-        <h1>General Chatting</h1>
+        <h1 id="#msgH1">General Chatting</h1>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
+          var disqus_identifier, disqus_title, disqus_url;
+          var initSystem = function (key, msg){
+            disqus_identifier = key;
+            disqus_title = msg;
+            disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=" + key;
+            $("#" + key).addClass("active");
+            $("#msgH1").html(msg);
+            document.title = msg + " - ZeRo2PaNic/PaNiC2ZeRo Messages Board";
+          }
           switch(window.location.search){
             case "?page=chatting":
-              var disqus_identifier = "Chatting";
-              var disqus_title = "General Chatting";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=chatting";
-              $("#chatting").addClass("active");
-              document.title = "General Chatting - ZeRo2PaNic/PaNiC2ZeRo Messages Board";
+              initSystem("chatting", "General Chatting");
               break;
             case "?page=strategies":
-              var disqus_identifier = "Strategies";
-              var disqus_title = "Strategies and Base Design";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=strategies";
-              $("#strategies").addClass("active");
-              document.title = "Strategies and Base Design - ZeRo2PaNic/PaNiC2ZeRo Messages Board";
+              initSystem("strategies", "Strategies and Base Design");
               break;
-            case "?page=chatting":
-              var disqus_identifier = "Chatting";
-              var disqus_title = "General Chatting";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+            case "?page=management":
+              initSystem("management", "Alliance Management");
               break;
-            case "?page=chatting":
-              var disqus_identifier = "Chatting";
-              var disqus_title = "General Chatting";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+            case "?page=issue":
+              initSystem("issue", "Report Issue");
               break;
-            case "?page=chatting":
-              var disqus_identifier = "Chatting";
-              var disqus_title = "General Chatting";
-              var disqus_url = "http://x01x012013.github.io/z2pp2z/Chatting.html";
+            case "?page=offtopic":
+              initSystem("offtopic", "Off-Topic");
               break;
             default: 
               alert("System Error: Invalid Parameter");
