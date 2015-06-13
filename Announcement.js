@@ -1,1 +1,1 @@
-$("#annoucementHolder").html("<p>If you are a lord and want to be moderator, please post your request in Alliance Management. You will need an account to be moderator</p>");
+$("#annoucementHolder").html("<p>You do NOT need an account to chat, have fun! </p>");
