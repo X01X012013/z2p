@@ -42,8 +42,6 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li id="chatting"><a href="ChatCore.html?page=chatting">General Chatting</a></li>
-            <li id="strategies"><a href="ChatCore.html?page=strategies">Strategies and Base Design</a></li>
-            <li id="management"><a href="ChatCore.html?page=management">Alliance Management</a></li>
             <li id="issue"><a href="ChatCore.html?page=issue">Report Issue</a></li>
             <li id="offtopic"><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
           </ul>
@@ -51,14 +49,6 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Announcement 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Announcement</h1>
-        <div id="annoucementHolder"><p>Loading... You must have JavaScript enabled to use this site. </p></div>
-      </div>
-    </div>
-    <script src="Announcement.js"></script> -->
     <!-- Disqus -->
     <div class="container">
       <div class="jumbotron">
@@ -77,12 +67,6 @@
           switch(window.location.search){
             case "?page=chatting":
               initSystem("chatting", "General Chatting");
-              break;
-            case "?page=strategies":
-              initSystem("strategies", "Strategies and Base Design");
-              break;
-            case "?page=management":
-              initSystem("management", "Alliance Management");
               break;
             case "?page=issue":
               initSystem("issue", "Report Issue");
