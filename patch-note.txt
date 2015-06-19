@@ -1,0 +1,2 @@
+v1.0 - 2015.06.19: 
+1. First stable release
