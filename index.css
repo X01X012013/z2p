@@ -8,8 +8,8 @@ body{
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
     border-bottom-width: 0px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
