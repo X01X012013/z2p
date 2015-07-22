@@ -1,7 +1,7 @@
 body{
-  pading: 50px;
+  padding-top: 50px;
 }
 .navbar-custom{
-  background-color: rgba(248, 248, 248, 0);
+  background-color: rgba(0, 0, 0, 0);
   border-bottom-width: 0px;
 }
