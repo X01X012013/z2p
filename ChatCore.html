@@ -28,7 +28,28 @@
     <!-- End JS -->
   </head>
   <body role="document">
-    <!-- Static Navbar -->
+    <!-- Navbar -->
+    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+            <span class="sr-only">Show Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li id="chatting"><a href="ChatCore.html?page=chatting">General Chatting</a></li>
+            <li id="issue"><a href="ChatCore.html?page=issue">Report Issue</a></li>
+            <li id="offtopic"><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -49,7 +70,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>-->
     <!-- End Navbar -->
     <!-- Disqus -->
     <div class="jumbotron">
