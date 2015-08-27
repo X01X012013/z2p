@@ -4,12 +4,12 @@
     right: 0px;
     text-decoration: none;
     color: #000000;
-    background-color: rgba(238, 238, 238, 0.30);
+    background-color: rgba(200, 200, 200, 0.50);
     font-size: 12px;
     padding: 1em;
 }
 .jumpToTop:hover{
     text-decoration: none;
     color: #FFFFFF;
-    background-color: rgba(100, 100, 100, 0.70);
+    background-color: rgba(100, 100, 100, 0.50);
 }
