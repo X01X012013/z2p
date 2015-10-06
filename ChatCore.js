@@ -11,6 +11,9 @@ switch(window.location.search){
   case "?page=chatting":
     initSystem("chatting", "General Chatting");
     break;
+  case "?page=management":
+    initSystem("management", "Alliance Management");
+    break;
   case "?page=issue":
     initSystem("issue", "Report Issue");
     alert("This place is only for issues related to this website, game related issues should be posted to the official forum. ");
