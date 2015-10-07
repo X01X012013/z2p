@@ -1,4 +1,4 @@
-.jumpToTop .jumpToTop:focus{
+.jumpToTop, .jumpToTop:focus{
     position: fixed;
     bottom: 2em;
     right: 0px;
