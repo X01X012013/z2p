@@ -13,3 +13,6 @@
     color: #FFFFFF;
     background-color: rgba(100, 100, 100, 0.50);
 }
+.jumpToTop:focus{
+    text-decoration: none;
+}
