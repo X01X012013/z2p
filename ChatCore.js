@@ -22,6 +22,9 @@ switch(window.location.search){
   case "?page=offtopic":
     initSystem("offtopic", "Off-Topic");
     break;
+  case "?page=coc":
+    initSystem("coc", "Clash of Clans");
+    break;
   default: 
     alert("Page not found! Taking you back to the home page. ");
     window.location.href = "http://x01x012013.github.io/z2p/index.html";
