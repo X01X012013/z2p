@@ -2,7 +2,7 @@ var disqus_identifier, disqus_title, disqus_url;
 var initSystem = function(key, msg){
   disqus_identifier = key;
   disqus_title = msg;
-  disqus_url = "http://x01x012013.github.io/z2pp2z/ChatCore.html?page=" + key;
+  disqus_url = "http://x01x012013.github.io/z2p/ChatCore.html?page=" + key;
   $("#" + key).addClass("active");
   $("#msgH1").html(msg);
   document.title = msg + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
@@ -24,7 +24,7 @@ switch(window.location.search){
     break;
   default: 
     alert("Page not found! Taking you back to the home page. ");
-    window.location.href = "http://x01x012013.github.io/z2pp2z/index.html";
+    window.location.href = "http://x01x012013.github.io/z2p/index.html";
     break;
 }
 var disqus_shortname = "z2pp2z";
