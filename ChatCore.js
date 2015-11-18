@@ -1,3 +1,5 @@
+window.onload = function(){
+//main
 var disqus_identifier, disqus_title, disqus_url;
 var initSystem = function(key, msg, delAnno){
   disqus_identifier = key;
@@ -61,3 +63,12 @@ var loadDiscus = function(){
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 };
 if(disqus_identifier !== undefined){loadDiscus();}
+//jump to top
+$(".jumpToTop").click(function(e){
+  e.preventDefault();
+  $("html, body").animate({scrollTop: 0}, "fast");
+  return null;
+});
+//end
+return null;
+}
