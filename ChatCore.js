@@ -20,7 +20,7 @@ switch(window.location.search){
   case "?page=issue":
     initSystem("issue", "Report Issue", false);
     $("#announcement").html(
-      "<h1 style='color: #FF0000;'>Warnings<h1>" + 
+      "<h1 style='color: #FF0000;'>Warnings</h1>" + 
       "<p>This place is only for issues related to this website, game related issues should be posted to the official forum. </p>" + 
       "<p>Here is the official forum's address in case you need it: </p>" + 
       "<a style='font-size: 21px;' href='http://forums.ageofempires.com/forum/53-age-of-empires-castle-siege/' target='_blank'>http://forums.ageofempires.com/forum/53-age-of-empires-castle-siege/</a>" + 
@@ -34,8 +34,17 @@ switch(window.location.search){
     initSystem("coc", "Clash of Clans", true);
     break;
   default: 
-    alert("Page not found! Taking you back to the home page. ");
-    window.location.href = "http://x01x012013.github.io/z2p/index.html";
+    $("#disqusContainer").remove();
+    $("#announcement").html(
+      "<h1 style='color: #FF0000;'>Error! </h1>" + 
+      "<p>Please send the following data to me: </p>"
+      "<div id='debugBox'></div>"
+    );
+    var searchVar = window.location.search;
+    if(searchVar === undefined || searchVar === null){
+      searchVar = "undefined";
+    }
+    $("#debugBox").html(searchVar);
     break;
 }
 var disqus_shortname = "z2pp2z";
