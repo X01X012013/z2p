@@ -34,6 +34,7 @@ switch(window.location.search){
     initSystem("coc", "Clash of Clans", true);
     break;
   default: 
+    document.title = "Error! - AoE: CS alliances ZeRo2PaNiC Chat Board";
     $("#disqusContainer").remove();
     $("#announcement").html(
       "<h1 style='color: #FF0000;'>Error! </h1>" + 
