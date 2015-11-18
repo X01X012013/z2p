@@ -1,29 +1,37 @@
 var disqus_identifier, disqus_title, disqus_url;
-var initSystem = function(key, msg){
+var initSystem = function(key, msg, delAnno){
   disqus_identifier = key;
   disqus_title = msg;
   disqus_url = "http://x01x012013.github.io/z2p/ChatCore.html?page=" + key;
   $("#" + key).addClass("active");
   $("#msgH1").html(msg);
   document.title = msg + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
+  if(delAnno){
+    $("#announcementContainer").remove();
+  }
 }
 switch(window.location.search){
   case "?page=chatting":
-    initSystem("chatting", "General Chatting");
+    initSystem("chatting", "General Chatting", true);
     break;
   case "?page=management":
-    initSystem("management", "Alliance Management");
+    initSystem("management", "Alliance Management", true);
     break;
   case "?page=issue":
-    initSystem("issue", "Report Issue");
-    alert("This place is only for issues related to this website, game related issues should be posted to the official forum. ");
-    prompt("Here is the official forum's address in case you need it: ", "http://forums.ageofempires.com/forum/53-age-of-empires-castle-siege/");
+    initSystem("issue", "Report Issue", false);
+    $("#announcement").html(
+      "<h1 style='color: #FF0000;'>Warnings<h1>" + 
+      "<p>This place is only for issues related to this website, game related issues should be posted to the official forum. </p>" + 
+      "<p>Here is the official forum's address in case you need it: </p>" + 
+      "<a style='font-size: 21px;' href='http://forums.ageofempires.com/forum/53-age-of-empires-castle-siege/' target='_blank'>http://forums.ageofempires.com/forum/53-age-of-empires-castle-siege/</a>" + 
+      "<br><br>"
+    );
     break;
   case "?page=offtopic":
-    initSystem("offtopic", "Off-Topic");
+    initSystem("offtopic", "Off-Topic", true);
     break;
   case "?page=coc":
-    initSystem("coc", "Clash of Clans");
+    initSystem("coc", "Clash of Clans", true);
     break;
   default: 
     alert("Page not found! Taking you back to the home page. ");
