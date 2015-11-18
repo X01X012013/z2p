@@ -41,8 +41,14 @@ switch(window.location.search){
       "<div id='debugBox'></div>"
     );
     var searchVar = window.location.search;
-    if(searchVar === undefined || searchVar === null){
+    if(searchVar === undefined){
       searchVar = "undefined";
+    }
+    if(searchVar === null){
+      searchVar = "null";
+    }
+    if(searchVar === ""){
+      searchVar = "Empty String";
     }
     $("#debugBox").html(searchVar);
     break;
