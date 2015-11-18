@@ -37,7 +37,7 @@ switch(window.location.search){
     $("#disqusContainer").remove();
     $("#announcement").html(
       "<h1 style='color: #FF0000;'>Error! </h1>" + 
-      "<p>Please send the following data to me: </p>" + 
+      "<p>Please send the following message to me (do not worry if you cannot understand): </p>" + 
       "<div id='debugBox'></div>"
     );
     var searchVar = window.location.search;
