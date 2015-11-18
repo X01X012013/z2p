@@ -25,7 +25,17 @@
       <!-- Bootstrap -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></script>
       <!-- Other -->
-      <script src="jumpToTop.js" charset="utf-8"></script>
+      <script charset="utf-8">
+        //jump to top
+        window.onload = function(){
+          $(".jumpToTop").click(function(e){
+            e.preventDefault();
+            $("html, body").animate({scrollTop: 0}, "fast");
+            return null;
+          });
+          return null;
+        }
+      </script>
     <!-- End JS -->
   </head>
   <body role="document">
