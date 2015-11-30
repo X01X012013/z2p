@@ -5,5 +5,8 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css
 http://code.jquery.com/jquery-2.1.4.min.js
 http://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js
 https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
+#Delete ../ before pushing to live: 
+../jumpToTop.css
+../jumpToTop.js
 NETWORK:
 *
