@@ -36,7 +36,7 @@ switch(window.location.search){
     break;
   default: 
     document.title = "Error! - AoE: CS alliances ZeRo2PaNiC Chat Board";
-    $("#disqusContainer").remove();
+    $("#IDContainer").remove();
     $("#announcement").html(
       "<h1 style='color: #FF0000;'>Error! </h1>" + 
       "<p>Please send the following message to me (do not worry if you cannot understand): </p>" + 
