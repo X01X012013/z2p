@@ -3,7 +3,7 @@ var idcomments_post_id, idcomments_post_title, idcomments_post_url;
 var initSystem = function(key, msg, delAnno){
   idcomments_post_id = key;
   idcomments_post_title = msg;
-  idcomments_post_url = "http://x01x012013.github.io/z2p/ChatCore.html?page=" + key;
+  idcomments_post_url = "http://x01x012013.github.io/z2p/beta/IntenseDebate.html?page=" + key; //BETA
   $("#" + key).addClass("active");
   $("#msgH1").html(msg);
   document.title = msg + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
