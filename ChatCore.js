@@ -54,10 +54,6 @@ switch(window.location.search){
     $("#debugBox").html(searchVar);
     break;
 }
-var disqus_shortname = "z2pp2z";
-var loadDiscus = function(){
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-};
-if(disqus_identifier !== undefined){loadDiscus();}
+if(disqus_identifier !== undefined){
+  loadDiscus("z2pp2z", disqus_url, disqus_identifier, disqus_title);
+}
