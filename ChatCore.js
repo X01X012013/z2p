@@ -55,5 +55,5 @@ switch(window.location.search){
     break;
 }
 if(disqus_identifier !== undefined){
-  loadDisqus("z2pp2z", disqus_url, disqus_identifier, disqus_title);
+  disqusLoader("z2pp2z", disqus_url, disqus_identifier, disqus_title);
 }
