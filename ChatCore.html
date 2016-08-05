@@ -1,78 +1,67 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags 
-    <meta name="description" content=""> -->
+    <!--<meta name="description" content="">-->
     <meta name="robots" content="noindex">
     <meta name="author" content="X01X012013">
-    <!-- <link rel="icon" href=""> -->
+    <!--<link rel="icon" href="">-->
     <title>Loading... - AoE: CS alliances ZeRo2PaNiC Chat Board</title>
     <!-- CSS -->
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <!-- Bootstrap theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-      <!-- Custom styles for this template  -->
-      <link rel="stylesheet" href="jumpToTop.css">
-    <!-- End CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="common/common.css">
     <!-- JS -->
-      <!-- jQuery -->
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-      <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js" charset="utf-8"></script>
-      <!-- Bootstrap -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-      <!-- Other -->
-      <script src="jumpToTop.js" charset="utf-8"></script>
-    <!-- End JS -->
-  </head>
-  <body role="document">
-    <!-- Static Navbar -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://x01x012013.github.io/Global/disqusLoader.js" charset="utf-8"></script>
+    <script src="common/common.js" charset="utf-8"></script>
+    <script src="ChatCore/main.js" charset="utf-8"></script>
+</head>
+<body role="document">
+    <!-- Navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Show Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-header">
-          <a class="navbar-brand">bit.do/z2p</a>
+        <div class="container">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Show Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <a class="navbar-brand">bit.do/z2p</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="chatting"><a href="ChatCore.html?page=chatting">General Chatting</a></li>
+                    <li id="management"><a href="ChatCore.html?page=management">Alliance Management</a></li>
+                    <li id="issue"><a href="ChatCore.html?page=issue">Report Issue</a></li>
+                    <li id="offtopic"><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
+                    <li id="coc"><a href="ChatCore.html?page=coc">Clash of Clans</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li id="chatting"><a href="ChatCore.html?page=chatting">General Chatting</a></li>
-            <li id="management"><a href="ChatCore.html?page=management">Alliance Management</a></li>
-            <li id="issue"><a href="ChatCore.html?page=issue">Report Issue</a></li>
-            <li id="offtopic"><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
-            <li id="coc"><a href="ChatCore.html?page=coc">Clash of Clans</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
-    <!-- End Navbar -->
-    <!-- Announcement -->
-    <div class="jumbotron" id="announcementContainer">
-      <div class="container" id="announcement">
-      </div>
+    <!-- Announcement (will be handled by JavaScript) -->
+    <div class="jumbotron" id="announcementContainer" style="display:none;">
+        <div class="container" id="announcement">
+        </div>
     </div>
     <!-- Disqus -->
     <div class="jumbotron" id="disqusContainer">
-      <div class="container">
-        <h1 id="msgH1">Loading...</h1>
-        <div id="disqus_thread"></div>
-      </div>
+        <div class="container">
+            <h1 id="msgH1">Loading...</h1>
+            <div id="disqus_thread"></div>
+        </div>
     </div>
     <!-- Footer -->
     <div class="container theme-showcase">
-      <a style="color: gray; font-size: 12px;" href="http://X01X012013.github.io/Global/License.html" target="_blank">Cat Chatter v1.5 by X01X012013 - Click to view license</a>
+        <a id="footer" style="color: gray; font-size: 12px;" href="https://X01X012013.github.io/Global/License.html" target="_blank">Cat Chatter by X01X012013 - Click to view license</a>
     </div>
-    <a href="javascript:void(0);" class="jumpToTop">Jump to Top</a>
-    <script src="//x01x012013.github.io/Global/disqusLoader.js" charset="utf-8"></script>
-    <script src="ChatCore.js" charset="utf-8"></script>
-  </body>
+    <a href="javascript:void(0);" id="jumpToTop">Jump to Top</a>
+</body>
 </html>
