@@ -1,3 +1,5 @@
+"use strict";
+
 const initSystem = function (key, msg, delAnno) {
     //Load Disqus
     disqusLoader("z2pp2z", "https://x01x012013.github.io/z2p/ChatCore.html?page=" + key, key, msg);

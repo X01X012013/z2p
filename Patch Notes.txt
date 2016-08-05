@@ -1,11 +1,16 @@
+v1.7 - 2016.08.05: 
+1. Changed JavaScript mode to strict mode
+2. Fixed load screen
+3. Updated announcement messages
+
 v1.6 - 2016.08.04: 
 1. Updated home page
-2. Using newer jQuery and Bootstrap
+2. Updated jQuery to 3.1.0 and Bootstrap to 3.3.7
 3. Organized code into folders
 
 v1.5 - 2016.02.23: 
-1. Changed Disqus loader to the new one
-2. No longer use cache control
+1. Changed Disqus loader to a universal loader
+2. Removed cache control
 
 v1.4 - 2015.11.30: 
 1. Added cache control
@@ -18,8 +23,8 @@ v1.3 - 2015.11.17:
 
 v1.2 - 2015.10.06: 
 1. Added Alliance Management section
-2. Using Bootstrap 3.3.5 instead of 3.3.4
-3. Fixed Jump to Top button color issue (color will still be sticky for some mobile devices, but will be fine for computers)
+2. Updated Bootstrap from 3.3.4 to 3.3.5
+3. Fixed Jump to Top button color issue for mouse user
 
 v1.1 - 2015.08.27: 
 1. Fixed a spelling error
