@@ -1,3 +1,9 @@
+﻿# ZeRo2PaNiC Chat Board
+
+https://x01x012013.github.io/z2p/
+
+# Patch Notes
+
 v1.7 - 2016.08.05: 
 1. Changed JavaScript mode to strict mode
 2. Fixed load screen
@@ -32,3 +38,5 @@ v1.1 - 2015.08.27:
 
 v1.0 - 2015.06.19: 
 1. First stable release
+
+## [License](https://x01x012013.github.io/Global/license.html)
