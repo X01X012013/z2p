@@ -1,6 +1,6 @@
 ﻿# ZeRo2PaNiC Chat Board
 
-## https://x01x012013.github.io/z2p/
+https://x01x012013.github.io/z2p/
 
 # Patch Notes
 
@@ -47,4 +47,4 @@ v1.0 - 2015.06.19:
 
 1. First stable release
 
-## [View License](https://x01x012013.github.io/Global/license.html)
+### [View License](https://x01x012013.github.io/Global/license.html)
