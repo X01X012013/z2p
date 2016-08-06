@@ -1,3 +1,4 @@
+/* Jump to Top button styles, overrides Bootstrap styles. */
 #jumpToTop, #jumpToTop:focus {
     position: fixed;
     bottom: 2em;
