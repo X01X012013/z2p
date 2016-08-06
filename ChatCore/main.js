@@ -2,8 +2,9 @@
 
 /**
  * Initialize Disqus, navbar, and title; remove announcement div when needed. 
+ * @function
  * @param {string} key - The page identifier. 
- * @paran {string} title - The title of the page. 
+ * @param {string} title - The title of the page. 
  * @param {boolean} delAnno - Announcement div will be deleted if this variable is true. 
  */
 const initSystem = function (key, title, delAnno) {
@@ -21,11 +22,13 @@ const initSystem = function (key, title, delAnno) {
 
 /**
  * When the document is ready, check if the page exists, then load the page or show error message depending on the situation. 
+ * @function
+ * @listens $(document).ready
  */
 $(document).ready(function () {
     //Show announcement div
     $("#announcementContainer").show();
-    //Check if the page exists
+    //Check if the page exists and load if it does
     switch (window.location.search) {
         case "?page=chatting":
             initSystem("chatting", "General Chatting", true);

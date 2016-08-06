@@ -1,7 +1,9 @@
 "use strict";
 
 /**
- * When the document is ready, initialize the footer and Jump to Top button. 
+ * When the document is ready, initialize the footer and Jump to Top button.
+ * @function
+ * @listens $(document).ready
  */
 $(document).ready(function () {
     //Set footer
