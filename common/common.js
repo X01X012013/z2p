@@ -1,5 +1,8 @@
 "use strict";
 
+/**
+ * When the document is ready, initialize the footer and Jump to Top button. 
+ */
 $(document).ready(function () {
     //Set footer
     $("#footer").html("Cat Chatter v1.7 by X01X012013 - Click to view license");

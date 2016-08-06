@@ -1,18 +1,27 @@
 "use strict";
 
-const initSystem = function (key, msg, delAnno) {
+/**
+ * Initialize Disqus, navbar, and title; remove announcement div when needed. 
+ * @param {string} key - The page identifier. 
+ * @paran {string} title - The title of the page. 
+ * @param {boolean} delAnno - Announcement div will be deleted if this variable is true. 
+ */
+const initSystem = function (key, title, delAnno) {
     //Load Disqus
-    disqusLoader("z2pp2z", "https://x01x012013.github.io/z2p/ChatCore.html?page=" + key, key, msg);
+    disqusLoader("z2pp2z", "https://x01x012013.github.io/z2p/ChatCore.html?page=" + key, key, title);
     //Set navbar and title
     $("#" + key).addClass("active");
-    $("#msgH1").html(msg);
-    document.title = msg + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
+    $("#title").html(title);
+    document.title = title + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
     //Remove announcement div if needed
     if (delAnno) {
         $("#announcementContainer").remove();
     }
 };
-//Initialization
+
+/**
+ * When the document is ready, check if the page exists, then load the page or show error message depending on the situation. 
+ */
 $(document).ready(function () {
     //Show announcement div
     $("#announcementContainer").show();
