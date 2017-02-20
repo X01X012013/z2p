@@ -1,11 +1,11 @@
 "use strict";
 
 /**
- * Initialize Disqus, navbar, and title; remove announcement div when needed. 
+ * Initialize Disqus, navbar, and title; remove announcement div when needed.
  * @function
- * @param {string} key - The page identifier. 
- * @param {string} title - The title of the page. 
- * @param {boolean} delAnno - Announcement div will be deleted if this variable is true. 
+ * @param {string} key - The page identifier.
+ * @param {string} title - The title of the page.
+ * @param {boolean} delAnno - Announcement div will be deleted if this variable is true.
  */
 const initSystem = function (key, title, delAnno) {
     //Load Disqus
@@ -21,7 +21,7 @@ const initSystem = function (key, title, delAnno) {
 };
 
 /**
- * When the document is ready, check if the page exists, then load the page or show error message depending on the situation. 
+ * When the document is ready, check if the page exists, then load the page or show error message depending on the situation.
  * @function
  * @listens $(document).ready
  */
