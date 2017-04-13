@@ -9,7 +9,7 @@
  */
 const initSystem = function (key, title, delAnno) {
     //Load Disqus
-    disqusLoader("z2pp2z", "https://x01x012013.github.io/z2p/ChatCore.html?page=" + key, key, title);
+    disqusLoader("z2pp2z", "https://jspenguin2017.github.io/z2p/ChatCore.html?page=" + key, key, title);
     //Set navbar and title
     $("#" + key).addClass("active");
     $("#title").html(title);
