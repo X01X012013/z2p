@@ -1,6 +1,6 @@
-﻿# ZeRo2PaNiC Chat Board
+# ZeRo2PaNiC Chat Board
 
-https://x01x012013.github.io/z2p/
+https://jspenguin2017.github.io/z2p/
 
 # Patch Notes
 
