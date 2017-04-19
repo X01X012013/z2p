@@ -14,7 +14,7 @@ const initSystem = function (key, title, delAnno) {
     if (key === "chatting-page2") {
         key = "chatting";
     } else if (key === "chatting") {
-        key = "archive;
+        key = "archive";
     }
     //Set navbar and title
     $("#" + key).addClass("active");
