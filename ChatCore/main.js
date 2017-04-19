@@ -31,7 +31,7 @@ $(document).ready(function () {
     //Check if the page exists and load if it does
     switch (window.location.search) {
         case "?page=chatting":
-            initSystem("chatting", "General Chatting", true);
+            initSystem("chatting-page2", "General Chatting", true);
             break;
         case "?page=management":
             initSystem("management", "Alliance Management", true);
@@ -46,6 +46,9 @@ $(document).ready(function () {
             break;
         case "?page=coc":
             initSystem("coc", "Clash of Clans", true);
+            break;
+        case "?page=archive":
+            initSystem("chatting", "General Chatting", true);
             break;
         default:
             //Does not exist
