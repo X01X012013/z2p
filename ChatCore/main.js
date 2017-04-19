@@ -54,7 +54,7 @@ $(document).ready(function () {
             initSystem("coc", "Clash of Clans", true);
             break;
         case "?page=archive":
-            initSystem("chatting", "General Chatting", true);
+            initSystem("chatting", "Archive: General Chatting Page 1", true);
             break;
         default:
             //Does not exist
