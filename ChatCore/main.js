@@ -25,8 +25,9 @@ const initSystem = function (key, title, delAnno) {
 };
 
 /**
- * When the document is ready, check if the page exists, then load the page or show error message depending on the situation.
- * If no page is selected, General Chatting is loaded.
+ * When the document is ready, check if the requested page exists.
+ * If no page is requested, General Chatting is loaded.
+ * If the requested page does not exist, show an error message, otherwise, load the page.
  * @function
  * @listens $(document).ready
  */
