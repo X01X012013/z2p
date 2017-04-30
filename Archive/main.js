@@ -43,7 +43,7 @@ $(document).ready(function () {
             let page = null, j = 1;
             //Put pages into list div
             while (page = pages["page" + j.toString()]) {
-                $("#" + elemID[i]).append(`<p><a href="Archive.html?page=${keys[i]}-page${j}" target="_blank">${page[1]}</a></p>`);
+                $("#" + elemID[i]).append(`<p><a href="Archive.html?page=${keys[i]}-page${j}">${page[1]}</a></p>`);
                 j++;
             }
         } else {
