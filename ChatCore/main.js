@@ -38,7 +38,7 @@ $(document).ready(function () {
             initSystem("chatting-page2", "General Chatting", true);
             break;
         case "?page=management":
-            initSystem("management", "Alliance Management", true);
+            initSystem("management-page2", "Alliance Management", true);
             break;
         case "?page=issue":
             initSystem("issue", "Report Issue", false);
