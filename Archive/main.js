@@ -54,7 +54,7 @@ $(document).ready(function () {
     }
     //Check requested page and load it
     let key, page;
-    if ((/\?page\=.*\-.*/).test(window.location.search)) {
+    if ((/^\?page\=.*\-.*/).test(window.location.search)) {
         //We got something that might be valid
         const data = window.location.search.split(/=|-/);
         key = data[1];
