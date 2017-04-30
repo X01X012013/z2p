@@ -34,6 +34,7 @@ $(document).ready(function () {
     $("#announcementContainer").show();
     //Check if the page exists and load if it does
     switch (window.location.search) {
+        case "":
         case "?page=chatting":
             initSystem("chatting-page2", "General Chatting", true);
             break;
@@ -63,8 +64,6 @@ $(document).ready(function () {
                     searchVar = "undefined";
                 } else if (searchVar === null) {
                     searchVar = "null";
-                } else if (searchVar === "") {
-                    searchVar = "Empty String";
                 }
                 $("#debugBox").append($("<p>").html(searchVar));
             });
