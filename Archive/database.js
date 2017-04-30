@@ -9,7 +9,9 @@ var db = {
     "chatting": {
         "page1": ["chatting", "General Chatting Page 1"]
     },
-    "management": {},
+    "management": {
+        "page1": ["management", "Alliance Management Page 1"]
+    },
     "issue": {},
     "offtopic": {},
     "coc": {}
