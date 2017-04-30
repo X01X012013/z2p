@@ -2,7 +2,7 @@
 
 This is a community chat board. 
 
-## [Enter](https://jspenguin2017.github.io/z2p/)
+### [Enter](https://jspenguin2017.github.io/z2p/)
 
 # Patch Notes
 
