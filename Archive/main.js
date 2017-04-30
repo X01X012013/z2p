@@ -79,8 +79,6 @@ $(document).ready(function () {
                 searchVar = "undefined";
             } else if (searchVar === null) {
                 searchVar = "null";
-            } else if (searchVar === "") {
-                searchVar = "Empty String";
             }
             $("#debugBox").append($("<p>").html(searchVar));
         }).parent().show();
