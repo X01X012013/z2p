@@ -4,7 +4,7 @@ This is a community chat board.
 
 ### [Enter](https://jspenguin2017.github.io/z2p/)
 
-# Patch Notes
+## Patch Notes
 
 v1.7 - 2016.08.05: 
 
