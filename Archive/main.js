@@ -60,7 +60,7 @@ $(document).ready(function () {
         key = data[1];
         page = data[2];
     } else {
-        //This is not valid at all, assume no page requested
+        //It's not valid at all, assume no page requested
         key = "chatting";
         page = "page1";
     }
