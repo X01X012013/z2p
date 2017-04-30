@@ -56,7 +56,6 @@ $(document).ready(function () {
     //Add dropdown animation
     //http://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown
     $(".dropdown").on("show.bs.dropdown", function () {
-        //$(".dropdown").not(this).trigger("hide.bs.dropdown");
         $(this).find(".dropdown-menu").first().stop(true, true).slideDown(200);
     });
     $(".dropdown").on("hide.bs.dropdown", function (e) {
