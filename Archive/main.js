@@ -29,7 +29,8 @@ const elemID = ["listChatting", "listManagement", "listIssue", "listOffTopic", "
 
 /**
  * When the document is ready, draw archive pages, then check if the requested page exists.
- * If no page is requested, defaults to General Chatting Page 1. If the requested page does not exist, show an error message, otherwise, load the page.
+ * If no page is requested, General Chatting Page 1 is loaded.
+ * If the requested page does not exist, show an error message, otherwise, load the page.
  * @function
  * @listens $(document).ready
  */
