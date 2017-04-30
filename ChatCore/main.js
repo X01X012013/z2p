@@ -10,17 +10,15 @@
 const initSystem = function (key, title, delAnno) {
     //Load Disqus
     disqusLoader("z2pp2z", "https://jspenguin2017.github.io/z2p/ChatCore.html?page=" + key, key, title);
-    //Temporary patch: handle archive
-    if (key === "chatting-page2") {
-        key = "chatting";
-    } else if (key === "chatting") {
-        key = "archive";
+    //Remove page number from key
+    if (key.includes("-")) {
+        key = key.split("-")[0];
     }
     //Set navbar and title
     $("#" + key).addClass("active");
     $("#title").html(title);
     document.title = title + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
-    //Remove announcement div if needed
+    //Remove or show announcement div
     if (delAnno) {
         $("#announcementContainer").remove();
     }
@@ -52,9 +50,6 @@ $(document).ready(function () {
             break;
         case "?page=coc":
             initSystem("coc", "Clash of Clans", true);
-            break;
-        case "?page=archive":
-            initSystem("chatting", "Archive: General Chatting Page 1", true);
             break;
         default:
             //Does not exist
