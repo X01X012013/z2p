@@ -10,8 +10,8 @@
     <!--<link rel="icon" href="" />-->
     <title>Loading... - AoE: CS alliances ZeRo2PaNiC Chat Board</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link rel="stylesheet" href="common/common.css" />
+    <link rel="stylesheet" href="Archive/bootstrap.cyborg.theme.min.css" />
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Show Menu</span>
@@ -31,50 +31,21 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="navbar-header">
-                <a class="navbar-brand">Z2P Chat</a>
+                <a class="navbar-brand">Z2P Chat Archive</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="ChatCore.html?page=chatting">General Chatting</a></li>
-                    <li><a href="ChatCore.html?page=management">Alliance Management</a></li>
-                    <li><a href="ChatCore.html?page=issue">Report Issue</a></li>
-                    <li><a href="ChatCore.html?page=offtopic">Off-Topic</a></li>
-                    <li><a href="ChatCore.html?page=coc">Clash of Clans</a></li>
-                    <li class="active"><a href="Archive.html">Archive</a></li>
+                    <li id="listPlaceholder"><a>Loading...</a></li>
+                    <li><a href="ChatCore.html?page=chatting">Return Live</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div style="height:70px;"></div>
     <!-- Announcement (will be handled by JavaScript) -->
     <div class="jumbotron" id="announcementContainer" style="display:none;">
         <div class="container" id="announcement"></div>
-    </div>
-    <!-- Archive lists -->
-    <div class="jumbotron">
-        <div class="container" id="listChatting">
-            <h2>General Chatting</h2>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container" id="listManagement">
-            <h2>Alliance Management</h2>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container" id="listIssue">
-            <h2>Report Issue</h2>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container" id="listOffTopic">
-            <h2>Off-Topic</h2>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container" id="listCOC">
-            <h2>Clash of Clans</h2>
-        </div>
     </div>
     <!-- Disqus -->
     <div class="jumbotron" id="disqusContainer">
