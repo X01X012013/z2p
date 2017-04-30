@@ -1,9 +1,16 @@
 /**
- * A database to lookup key and title from search string.
- * @function
- * @param {string} search - The search string.
+ * A dictionary containing data of each archived page.
+ * @const
+ * Accessing: db[key][page]
+ * Get a string array: [Disqus identifier, title]
  */
 
-var db = function (search) {
-
+var db = {
+    "chatting": {
+        "page1": ["chatting", "General Chatting Page 1"]
+    },
+    "management": {},
+    "issue": {},
+    "offtopic": {},
+    "coc": {}
 };

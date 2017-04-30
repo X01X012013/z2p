@@ -7,7 +7,7 @@
  */
 $(document).ready(function () {
     //Set footer
-    $("#footer").html("Cat Chatter v1.7 by jspenguin2017");
+    $("#footer").html("Community Chat Board v2.0 by jspenguin2017");
     //Set jump to top button animation
     $("#jumpToTop").click(function (e) {
         $("html, body").animate({ scrollTop: 0 }, "fast");

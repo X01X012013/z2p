@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Initialize Disqus, navbar, and title; remove announcement div when needed.
+ * Initialize Disqus, navbar, and title then remove announcement div when needed.
  * @function
  * @param {string} key - The page identifier.
  * @param {string} title - The title of the page.
@@ -18,7 +18,7 @@ const initSystem = function (key, title, delAnno) {
     $("#" + key).addClass("active");
     $("#title").html(title);
     document.title = title + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
-    //Remove or show announcement div
+    //Remove announcement div
     if (delAnno) {
         $("#announcementContainer").remove();
     }
@@ -43,7 +43,7 @@ $(document).ready(function () {
         case "?page=issue":
             initSystem("issue", "Report Issue", false);
             //Load issue help div
-            $("#announcement").load("ChatCore/issue_help.html");
+            $("#announcement").load("ChatCore/issue-help.html");
             break;
         case "?page=offtopic":
             initSystem("offtopic", "Off-Topic", true);
@@ -53,10 +53,10 @@ $(document).ready(function () {
             break;
         default:
             //Does not exist
-            document.title = "Error! - AoE: CS alliances ZeRo2PaNiC Chat Board";
+            document.title = "Page not found - AoE: CS alliances ZeRo2PaNiC Chat Board";
             $("#disqusContainer").remove();
             //Load error div
-            $("#announcement").load("ChatCore/error.html", function () {
+            $("#announcement").load("page-not-found.html", function () {
                 //Set debug string when error div is ready
                 let searchVar = window.location.search;
                 if (searchVar === undefined) {
