@@ -6,6 +6,11 @@ This is a community chat board.
 
 ## Patch Notes
 
+v2.0 - 2017.04.29: 
+
+1. Added archive functionality
+2. Updated jQuery to 3.2.1
+
 v1.7 - 2016.08.05: 
 
 1. Changed JavaScript mode to strict mode
