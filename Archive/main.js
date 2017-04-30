@@ -72,7 +72,7 @@ $(document).ready(function () {
         document.title = "Page not found - AoE: CS alliances ZeRo2PaNiC Chat Board";
         $("#disqusContainer").remove();
         //Load error div
-        $("#announcement").show().load("page-not-found.html", function () {
+        $("#announcement").load("page-not-found.html", function () {
             //Set debug string when error div is ready
             let searchVar = window.location.search;
             if (searchVar === undefined) {
@@ -83,6 +83,6 @@ $(document).ready(function () {
                 searchVar = "Empty String";
             }
             $("#debugBox").append($("<p>").html(searchVar));
-        });
+        }).parent().show();
     }
 });
