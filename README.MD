@@ -1,6 +1,8 @@
 # ZeRo2PaNiC Chat Board
 
-https://jspenguin2017.github.io/z2p/
+This is a community chat board. 
+
+## [Enter](https://jspenguin2017.github.io/z2p/)
 
 # Patch Notes
 
