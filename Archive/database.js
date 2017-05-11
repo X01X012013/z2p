@@ -1,10 +1,9 @@
 /**
  * A dictionary containing data of each archived page.
- * @const
  * Accessing: db[key][page]
- * Get a string array: [Disqus identifier, title]
+ * Returns a string array: [Disqus identifier, title]
+ * @const {Object}
  */
-
 var db = {
     "chatting": {
         "page1": ["chatting", "General Chatting Page 1"]

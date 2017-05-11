@@ -2,6 +2,8 @@
 
 This is a community chat board. 
 
+Please open an issue if there is something you want me to know. 
+
 ### [Enter](https://jspenguin2017.github.io/z2p/)
 
 ## Patch Notes
