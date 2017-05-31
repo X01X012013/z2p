@@ -1,6 +1,6 @@
-# ZeRo2PaNiC Chat Board
+# AoE:CS allicances ZeRo2PaNiC Chat Board
 
-This is a community chat board. 
+This is a game alliances community chat board. 
 
 Please open an issue if there is something you want me to know. 
 
