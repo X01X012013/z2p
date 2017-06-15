@@ -16,7 +16,7 @@ const initSystem = function (key, title, delAnno) {
     }
     //Set navbar and title
     $("#" + key).addClass("active");
-    $("#title").html(title);
+    $("#title").text(title);
     document.title = title + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
     //Remove announcement div
     if (delAnno) {
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 } else if (searchVar === null) {
                     searchVar = "null";
                 }
-                $("#debugBox").append($("<p>").html(searchVar));
+                $("#debugBox").append($("<p>").text(searchVar));
             });
             break;
     }
