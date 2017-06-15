@@ -9,7 +9,7 @@
 const initSystem = function (key, title) {
     //Load Disqus
     disqusLoader("z2pp2z", "https://jspenguin2017.github.io/z2p/ChatCore.html?page=" + key, key, title);
-    $("#title").html(title);
+    $("#title").text(title);
     document.title = title + " - AoE: CS alliances ZeRo2PaNiC Chat Board";
     //Remove announcement div
     $("#announcementContainer").remove();
@@ -94,7 +94,7 @@ $(document).ready(function () {
             } else if (searchVar === null) {
                 searchVar = "null";
             }
-            $("#debugBox").append($("<p>").html(searchVar));
+            $("#debugBox").append($("<p>").text(searchVar));
         }).parent().show();
     }
 });
