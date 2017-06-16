@@ -40,11 +40,10 @@ $(document).ready(function () {
         const pages = db[keys[i]];
         //Check if we have at least one page
         if (pages["page1"]) {
-            let page = null, j = 1;
+            let page = null, j = 0;
             //Put pages into list div
-            while (page = pages["page" + j.toString()]) {
+            while (page = pages["page" + (++j).toString()]) {
                 $("#" + elemID[i]).append(`<li><a href="Archive.html?page=${keys[i]}-page${j}">Page ${j}</a></li>`);
-                j++;
             }
         } else {
             //No page at all, remove matching list div
