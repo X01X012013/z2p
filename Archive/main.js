@@ -59,10 +59,10 @@ $(document).ready(function () {
     });
     $(".dropdown").on("hide.bs.dropdown", function (e) {
         e.preventDefault();
-        $(this).find(".dropdown-menu").first().stop(true, true).slideUp(200, (function () {
+        $(this).find(".dropdown-menu").first().stop(true, true).slideUp(200, () => {
             $(this).removeClass("open");
             $(this).find(".dropdown-toggle").attr("aria-expanded", "false");
-        }).bind(this));
+        });
     });
     //Check requested page and load it
     let key, page;
