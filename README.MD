@@ -8,6 +8,9 @@ Please open an issue if there is something you want me to know.
 
 ## Patch Notes
 
+v2.1 - 2017.06.15: 
+1. Fixed a cross site scripting vulnerability
+
 v2.0 - 2017.04.29: 
 
 1. Added archive functionality
