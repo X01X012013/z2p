@@ -4,7 +4,7 @@
  * Returns a string array: [Disqus identifier, title]
  * @const {Object}
  */
-var db = {
+const db = {
     "chatting": {
         "page1": ["chatting", "General Chatting Page 1"]
     },
