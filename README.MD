@@ -1,6 +1,6 @@
 # AoE:CS allicances ZeRo2PaNiC Chat Board
 
-This is a game alliances community chat board. 
+A game alliances community chat board
 
 Please open an issue if there is something you want me to know. 
 
@@ -9,7 +9,7 @@ Please open an issue if there is something you want me to know.
 ## Patch Notes
 
 v2.1 - 2017.06.15: 
-1. Fixed a cross site scripting vulnerability
+1. Fixed a potential cross site scripting vulnerability
 
 v2.0 - 2017.04.29: 
 
