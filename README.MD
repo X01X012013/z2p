@@ -8,6 +8,9 @@ Please open an issue if there is something you want me to know.
 
 ## Patch Notes
 
+v2.2 - 2018.08.02: 
+1. Added link to Discord
+
 v2.1 - 2017.06.15: 
 1. Fixed a potential cross site scripting vulnerability
 
