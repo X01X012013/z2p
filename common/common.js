@@ -7,7 +7,7 @@
  */
 $(document).ready(function () {
     // Set Discord link
-    const discordInviteKey = "VtnmVms";
+    const discordInviteKey = "ER2QG84";
     const discordElement = document.getElementById("discordLink");
     discordElement.href = "https://discord.gg/" + discordInviteKey;
     discordElement.textContent = "discord.gg/" + discordInviteKey;
